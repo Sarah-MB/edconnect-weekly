@@ -25,11 +25,33 @@
     <!-- NAV ENDS HERE -->
     <!-- MAIN CONTENT STARTS HERE -->
     <main>
-        <p>This application allows you to explore various academic projects. You can search, upload and browse projects</p>
+        <!-- PROJECT SEARCH START HERE -->
         <section>
+            <!-- HEADER FOR PROJECT SEARCH -->
+            <header>
+                <h1> Search Project By</h1>
+            </header>
+            <!-- SEARCH TYPE FORM STARTS HERE  -->
+            <form name="searchForm">
+                <input type="text" name="searchBy" placeholder="Project Name, Authors"><br><br>
+                <label> Search Type:</label><br>
+                    <select name="searchType">
+                        <option value="Name">Name</option>
+                        <option value="Abstract">Abstract</option>
+                        <option value="Authors">Authors</option>
+                        <option value="Tags">Tags</option>
+                    </select><br><br>
+                <input type="submit" value="Search">
+            </form>
+        </section><br><br>
+         <!-- PROJECT SEARCH START HERE -->
+
+         <!-- SEARCH RESULT STARTS HERE -->
+        <div>
+            <!-- HEADER FOR SEARCH RESULT -->
             <header>
                 <h2>
-                    <strong>Project List</strong>
+                    <strong>Search Result</strong>
                 </h2>
             </header>
             <!-- CONTENTS DIVISION -->
@@ -40,27 +62,13 @@
                     <li>Name: Project 1</li>
                     <li>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
                     <li>Program: Computer Science</li>
-                    <li>Year: 2020</li>
-                </ul>
-                <!-- ITEM TWO -->
-                <h3>Project 2</h3>
-                <ul>
-                    <li>Name: Project 1</li>
-                    <li>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                    <li>Program: Computer Science</li>
-                    <li>Year: 2020</li>
-                </ul>
-                <!-- ITEM THREE -->
-                <h3>Project 3 </h3>
-                <ul>
-                    <li>Name: Project 1</li>
-                    <li>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                    <li>Program: Computer Science</li>
-                    <li>Year: 2020</li>
+                    <li>Author: John Doe, Jane Doe</li>
+                    <li>Tags: #Asphyxia #GSW</li>
+                    <li>Year: 2018</li>
                 </ul>
             </div>
-            <!-- CONTENT DIVISION ENDS HERE -->
-        </section>
+        </div>
+        <!-- SEARCH RESULT ENDS HERE -->
     </main>
     <!-- MAIN CONTENT ENDS HERE -->
 </html>
